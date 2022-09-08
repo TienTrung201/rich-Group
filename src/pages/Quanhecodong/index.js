@@ -32,6 +32,7 @@ function QuanHeCoDong() {
         </tr>
       );
     }
+    return;
   });
   const listRecruitments = [
     "Công bố thông tin",

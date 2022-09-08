@@ -46,6 +46,7 @@ function Home() {
           </div>
         );
       }
+      return;
     });
     return news;
   }, [listnews]);
@@ -82,6 +83,7 @@ function Home() {
           </div>
         );
       }
+      return;
     });
     return news;
   }, [listnews]);
@@ -119,6 +121,7 @@ function Home() {
           </div>
         );
       }
+      return;
     });
     return news;
   }, [listnews]);

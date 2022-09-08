@@ -49,6 +49,7 @@ function Chitiettintuc({ news, title, img, content }) {
         </Link>
       );
     }
+    return;
   });
   return (
     <article className={cx("mainContiner", "grid", "wide", "row")}>

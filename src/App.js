@@ -5,7 +5,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; //npm i react-router-dom
 import { publicRoutes } from "@/routes";
 import { DefaultLayout } from "@/components/Layout";
-import { setupServer } from "./fakeApis";
+// import { setupServer } from "./fakeApis";
 // import {
 //   AddNewJob,
 //   fetchRecruitmentJob,
@@ -40,7 +40,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 
 function App() {
   return (

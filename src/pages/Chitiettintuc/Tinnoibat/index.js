@@ -47,6 +47,7 @@ function TinNoiBat() {
               </div>
             );
           }
+          return;
         })}
       </div>
     </section>

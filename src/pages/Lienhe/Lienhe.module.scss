@@ -1,0 +1,764 @@
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.grid.wide {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row-gutter {
+  display: flex;
+  /* dcac item tu dong nam ngang */
+  flex-wrap: wrap;
+  /* d  khi chieu ngang columns vuot qua row-> tu cuong hang*/
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-gutter .col-gutter {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.row .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.M-0 {
+  display: none;
+}
+
+.M-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.M-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.M-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.M-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.M-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.M-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.M-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.M-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.M-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.M-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.M-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.M-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.M-o-1 {
+  margin-left: 8.33333%;
+}
+
+.M-o-2 {
+  margin-left: 16.66667%;
+}
+
+.M-o-3 {
+  margin-left: 25%;
+}
+
+.M-o-4 {
+  margin-left: 33.333333%;
+}
+
+.M-o-5 {
+  margin-left: 41.66667%;
+}
+
+.M-o-6 {
+  margin-left: 50%;
+}
+
+.M-o-7 {
+  margin-left: 58.33333%;
+}
+
+.M-o-8 {
+  margin-left: 66.66667%;
+}
+
+.M-o-9 {
+  margin-left: 75%;
+}
+
+.M-o-10 {
+  margin-left: 83.33333%;
+}
+
+.M-o-11 {
+  margin-left: 91.66667%;
+}
+
+/* Tablet - px low resolution */
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .wide {
+    width: 664px;
+  }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 740px) {
+  .row-gutter {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .col-gutter {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .T-0 {
+    display: none;
+  }
+  .T-1,
+  .T-2,
+  .T-3,
+  .T-4,
+  .T-5,
+  .T-6,
+  .T-7,
+  .T-8,
+  .T-9,
+  .T-10,
+  .T-11,
+  .T-12 {
+    display: block;
+  }
+  .T-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .T-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .T-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .T-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .T-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .T-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .T-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .T-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .T-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .T-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .T-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .T-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .T-o-1 {
+    margin-left: 8.33333%;
+  }
+  .T-o-2 {
+    margin-left: 16.66667%;
+  }
+  .T-o-3 {
+    margin-left: 25%;
+  }
+  .T-o-4 {
+    margin-left: 33.333333%;
+  }
+  .T-o-5 {
+    margin-left: 41.66667%;
+  }
+  .T-o-6 {
+    margin-left: 50%;
+  }
+  .T-o-7 {
+    margin-left: 58.33333%;
+  }
+  .T-o-8 {
+    margin-left: 66.66667%;
+  }
+  .T-o-9 {
+    margin-left: 75%;
+  }
+  .T-o-10 {
+    margin-left: 83.33333%;
+  }
+  .T-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* Pc low > (>1113px)*/
+
+@media only screen and (min-width: 1113px) {
+  .row-gutter {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .col-gutter {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .PC-0 {
+    display: none;
+  }
+  .PC-1,
+  .PC-2,
+  .PC-3,
+  .PC-4,
+  .PC-5,
+  .PC-6,
+  .PC-7,
+  .PC-8,
+  .PC-9,
+  .PC-10,
+  .PC-11,
+  .PC-12,
+  .PC-20 {
+    display: block;
+  }
+  .PC-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .PC-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .PC-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .PC-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .PC-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .PC-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .PC-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .PC-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .PC-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .PC-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .PC-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .PC-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .PC-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .PC-o-1 {
+    margin-left: 8.33333%;
+  }
+  .PC-o-2 {
+    margin-left: 16.66667%;
+  }
+  .PC-o-3 {
+    margin-left: 25%;
+  }
+  .PC-o-4 {
+    margin-left: 33.333333%;
+  }
+  .PC-o-5 {
+    margin-left: 41.66667%;
+  }
+  .PC-o-6 {
+    margin-left: 50%;
+  }
+  .PC-o-7 {
+    margin-left: 58.33333%;
+  }
+  .PC-o-8 {
+    margin-left: 66.66667%;
+  }
+  .PC-o-9 {
+    margin-left: 75%;
+  }
+  .PC-o-10 {
+    margin-left: 83.33333%;
+  }
+  .PC-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* px low resolution -> 1039px kéo nhẹ là tự đổi*/
+/* @media only screen and (min-width: 1024px) and (max-width: 1239px) { có thể để màn này */
+
+@media only screen and (min-width: 1024px) and (max-width: 1239px) {
+  .wide {
+    width: 984px;
+  }
+  .wide .row-gutter {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .col-gutter {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .wide .PC-0 {
+    display: none;
+  }
+  .wide .PC-1,
+  .wide .PC-2,
+  .wide .PC-3,
+  .wide .PC-4,
+  .wide .PC-5,
+  .wide .PC-6,
+  .wide .PC-7,
+  .wide .PC-8,
+  .wide .PC-9,
+  .wide .PC-10,
+  .wide .PC-11,
+  .wide .PC-12 {
+    display: block;
+  }
+  .wide .PC-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .wide .PC-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .wide .PC-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .wide .PC-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .wide .PC-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .wide .PC-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .wide .PC-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .wide .PC-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .wide .PC-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .wide .PC-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .wide .PC-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .wide .PC-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .wide .PC-o-1 {
+    margin-left: 8.33333%;
+  }
+  .wide .PC-o-2 {
+    margin-left: 16.66667%;
+  }
+  .wide .PC-o-3 {
+    margin-left: 25%;
+  }
+  .wide .PC-o-4 {
+    margin-left: 33.333333%;
+  }
+  .wide .PC-o-5 {
+    margin-left: 41.66667%;
+  }
+  .wide .PC-o-6 {
+    margin-left: 50%;
+  }
+  .wide .PC-o-7 {
+    margin-left: 58.33333%;
+  }
+  .wide .PC-o-8 {
+    margin-left: 66.66667%;
+  }
+  .wide .PC-o-9 {
+    margin-left: 75%;
+  }
+  .wide .PC-o-10 {
+    margin-left: 83.33333%;
+  }
+  .wide .PC-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* dung cho man hinh do phan giai thap */
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////CSS Lien he/////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///
+///
+.Continer {
+  padding-top: 10rem;
+  background-color: #f6f6f6;
+  padding-bottom: 7rem;
+}
+.continerMap {
+}
+.titleContiner {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  color: #1d1d1d;
+}
+.titleImg {
+  margin-right: 1.3rem;
+}
+.ContinerBanner {
+  margin-top: 5rem;
+  margin-bottom: 8.5rem;
+  padding-top: 20%;
+  background: url("../../assets/images/lienhe/bagrMap.png") top center/ cover
+    no-repeat;
+}
+.ContinerImfomation {
+  display: flex;
+  justify-content: space-between;
+}
+.infomationLeft {
+}
+.leftContent {
+  padding-bottom: 4.5rem;
+}
+
+.leftContentTitle {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.leftContentContact {
+  display: flex;
+}
+.phoneAndEmail {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  /* display: flex; */
+  margin-right: 2.5rem;
+  position: relative;
+  padding-left: 2.3rem;
+}
+.ContactPhone {
+  /* margin-right: 1rem; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  left: 0;
+}
+
+.timeWork {
+  margin-top: 2.5rem;
+  display: flex;
+}
+.daysTimeWork {
+  /* display: flex; */
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+.timeWorkContent {
+  margin-bottom: 1.5rem;
+}
+.calendar {
+  margin-right: 0.8rem;
+}
+
+.infomationRight {
+}
+.sendRichTitle {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 2.85rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 0.1rem #acacac;
+  width: fit-content;
+  color: #3a3a3a;
+}
+.sendRichContent {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-bottom: 2.5rem;
+}
+form {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.formName__input {
+  min-width: 15rem;
+}
+.inputName {
+  padding-top: 1rem;
+}
+.inputType {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+input {
+  outline: none;
+  border: #e1e1e1 0.1rem solid;
+  background-color: #fafafa;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+}
+.inputEmail {
+  padding-top: 4.5rem;
+}
+.inputMessenge {
+  padding-top: 5rem;
+}
+.formInput {
+  width: 100%;
+}
+.input--name {
+  width: 100%;
+  height: 3.7rem;
+  margin-bottom: 1.9rem;
+}
+.inputEmailNumber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.9rem;
+}
+.input--email {
+  height: 3.7rem;
+  width: 40.74%;
+}
+.input--number {
+  height: 3.7rem;
+  width: 40.74%;
+}
+.input--messenge {
+  width: 100%;
+  height: 8.5rem;
+  margin-bottom: 2.5rem;
+  border: none;
+  background: var(--white-color);
+  outline: none;
+  border: #e1e1e1 0.1rem solid;
+  padding: 1rem 1rem;
+  font-size: 1.6rem;
+}
+.formSubmit {
+  background-color: var(--Main-color);
+  width: 17.5rem;
+  height: 4rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.formSubmit:hover {
+  background-color: #6ab3e7;
+}
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+//////////////REponsive///////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///
+///
+///
+///
+
+/* PC */
+@media only screen and (min-width: 1224px) {
+}
+
+@media only screen and (max-width: 1223px) {
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .Continer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .ContinerImfomation {
+    flex-direction: column;
+  }
+  .ContinerBanner {
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+    /* height: 35rem; */
+    padding-top: 25%;
+  }
+  .infomationRight {
+    /* margin-bottom: 4rem; */
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .continerMap {
+    padding: 0 0.8rem;
+  }
+  .sendRichTitle {
+    padding-bottom: 2rem;
+  }
+  .Continer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .titleContiner {
+    font-size: 2rem;
+  }
+  .ContinerImfomation {
+    flex-direction: column;
+    padding: 0 0.8rem;
+  }
+  .formName__input {
+    min-width: 7rem;
+  }
+  .ContinerBanner {
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+    padding-top: 30%;
+  }
+  .infomationRight {
+    /* margin-bottom: 4rem; */
+  }
+  .inputNumber.inputType {
+    font-size: 1.2rem;
+  }
+}

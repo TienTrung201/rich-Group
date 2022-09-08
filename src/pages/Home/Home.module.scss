@@ -1,0 +1,1303 @@
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.grid.wide {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row-gutter {
+  display: flex;
+  /* dcac item tu dong nam ngang */
+  flex-wrap: wrap;
+  /* d  khi chieu ngang columns vuot qua row-> tu cuong hang*/
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-gutter .col-gutter {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.row .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.M-0 {
+  display: none;
+}
+
+.M-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.M-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.M-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.M-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.M-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.M-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.M-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.M-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.M-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.M-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.M-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.M-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.M-o-1 {
+  margin-left: 8.33333%;
+}
+
+.M-o-2 {
+  margin-left: 16.66667%;
+}
+
+.M-o-3 {
+  margin-left: 25%;
+}
+
+.M-o-4 {
+  margin-left: 33.333333%;
+}
+
+.M-o-5 {
+  margin-left: 41.66667%;
+}
+
+.M-o-6 {
+  margin-left: 50%;
+}
+
+.M-o-7 {
+  margin-left: 58.33333%;
+}
+
+.M-o-8 {
+  margin-left: 66.66667%;
+}
+
+.M-o-9 {
+  margin-left: 75%;
+}
+
+.M-o-10 {
+  margin-left: 83.33333%;
+}
+
+.M-o-11 {
+  margin-left: 91.66667%;
+}
+
+/* Tablet - px low resolution */
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .wide {
+    width: 664px;
+  }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 740px) {
+  .row-gutter {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .col-gutter {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .T-0 {
+    display: none;
+  }
+  .T-1,
+  .T-2,
+  .T-3,
+  .T-4,
+  .T-5,
+  .T-6,
+  .T-7,
+  .T-8,
+  .T-9,
+  .T-10,
+  .T-11,
+  .T-12 {
+    display: block;
+  }
+  .T-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .T-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .T-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .T-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .T-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .T-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .T-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .T-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .T-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .T-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .T-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .T-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .T-o-1 {
+    margin-left: 8.33333%;
+  }
+  .T-o-2 {
+    margin-left: 16.66667%;
+  }
+  .T-o-3 {
+    margin-left: 25%;
+  }
+  .T-o-4 {
+    margin-left: 33.333333%;
+  }
+  .T-o-5 {
+    margin-left: 41.66667%;
+  }
+  .T-o-6 {
+    margin-left: 50%;
+  }
+  .T-o-7 {
+    margin-left: 58.33333%;
+  }
+  .T-o-8 {
+    margin-left: 66.66667%;
+  }
+  .T-o-9 {
+    margin-left: 75%;
+  }
+  .T-o-10 {
+    margin-left: 83.33333%;
+  }
+  .T-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* Pc low > (>1113px)*/
+
+@media only screen and (min-width: 1113px) {
+  .row-gutter {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .col-gutter {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .PC-0 {
+    display: none;
+  }
+  .PC-1,
+  .PC-2,
+  .PC-3,
+  .PC-4,
+  .PC-5,
+  .PC-6,
+  .PC-7,
+  .PC-8,
+  .PC-9,
+  .PC-10,
+  .PC-11,
+  .PC-12,
+  .PC-20 {
+    display: block;
+  }
+  .PC-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .PC-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .PC-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .PC-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .PC-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .PC-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .PC-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .PC-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .PC-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .PC-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .PC-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .PC-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .PC-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .PC-o-1 {
+    margin-left: 8.33333%;
+  }
+  .PC-o-2 {
+    margin-left: 16.66667%;
+  }
+  .PC-o-3 {
+    margin-left: 25%;
+  }
+  .PC-o-4 {
+    margin-left: 33.333333%;
+  }
+  .PC-o-5 {
+    margin-left: 41.66667%;
+  }
+  .PC-o-6 {
+    margin-left: 50%;
+  }
+  .PC-o-7 {
+    margin-left: 58.33333%;
+  }
+  .PC-o-8 {
+    margin-left: 66.66667%;
+  }
+  .PC-o-9 {
+    margin-left: 75%;
+  }
+  .PC-o-10 {
+    margin-left: 83.33333%;
+  }
+  .PC-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* px low resolution -> 1039px kéo nhẹ là tự đổi*/
+/* @media only screen and (min-width: 1024px) and (max-width: 1239px) { có thể để màn này */
+
+@media only screen and (min-width: 1024px) and (max-width: 1239px) {
+  .wide {
+    width: 984px;
+  }
+  .wide .row-gutter {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .col-gutter {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .wide .PC-0 {
+    display: none;
+  }
+  .wide .PC-1,
+  .wide .PC-2,
+  .wide .PC-3,
+  .wide .PC-4,
+  .wide .PC-5,
+  .wide .PC-6,
+  .wide .PC-7,
+  .wide .PC-8,
+  .wide .PC-9,
+  .wide .PC-10,
+  .wide .PC-11,
+  .wide .PC-12 {
+    display: block;
+  }
+  .wide .PC-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .wide .PC-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .wide .PC-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .wide .PC-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .wide .PC-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .wide .PC-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .wide .PC-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .wide .PC-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .wide .PC-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .wide .PC-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .wide .PC-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .wide .PC-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .wide .PC-o-1 {
+    margin-left: 8.33333%;
+  }
+  .wide .PC-o-2 {
+    margin-left: 16.66667%;
+  }
+  .wide .PC-o-3 {
+    margin-left: 25%;
+  }
+  .wide .PC-o-4 {
+    margin-left: 33.333333%;
+  }
+  .wide .PC-o-5 {
+    margin-left: 41.66667%;
+  }
+  .wide .PC-o-6 {
+    margin-left: 50%;
+  }
+  .wide .PC-o-7 {
+    margin-left: 58.33333%;
+  }
+  .wide .PC-o-8 {
+    margin-left: 66.66667%;
+  }
+  .wide .PC-o-9 {
+    margin-left: 75%;
+  }
+  .wide .PC-o-10 {
+    margin-left: 83.33333%;
+  }
+  .wide .PC-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* dung cho man hinh do phan giai thap */
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////CSS Trang chủ/////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+.homeContainer {
+  padding-top: 13rem;
+  /* display: flex;
+    flex-direction: column; */
+  background-color: #f6f6f6;
+}
+.ContainerIntroduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleContiner {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Main-color);
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+.titleContiner h2 {
+  font-size: 4.5rem;
+  padding: 0 2.5rem;
+  position: relative;
+  line-height: 4rem;
+  /* border-bottom: solid .4rem var(--borderColorTitle); */
+}
+.titleContiner h2::after {
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: var(--borderColorTitle);
+  position: absolute;
+  top: 135%;
+  right: 0;
+  left: 0;
+}
+.titleLogo {
+  width: 10rem;
+  height: 9rem;
+}
+.titleLogo {
+}
+.introduceImg {
+  width: 100%;
+  background: url("../../assets/images/trangchu/introduce.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  /* height: 57.1rem; */
+}
+
+.introduceBox {
+  width: 100%;
+  /* z-index: 2; */
+  position: relative;
+}
+.introduceBox::after {
+  content: "";
+  width: 50%;
+  background: url("../../assets/images/trangchu/introduce.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.introduceBackground2 {
+  background-color: var(--white-color);
+  width: 100%;
+}
+.introduceBackground1 {
+  background-color: #e6e6e6;
+  width: 100%;
+}
+.introduceContent--rightVision,
+.introduceContent--rightMission {
+  padding: 3.5rem 0rem;
+  padding-left: 18rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.rightMission50Persent,
+.rightVision50Persent {
+  width: 50%;
+}
+
+.introduceContent--title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  /* line-height: 3.8rem; */
+  margin-bottom: 3rem;
+  color: #1d1d1d;
+}
+.visionContent {
+}
+.visoncontentText {
+  padding-left: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.visionContent--text {
+  position: relative;
+  margin-bottom: 1.7rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  /* color: #000; */
+  /* opacity: .9; */
+  /* display: flex;
+    align-items: center; */
+  /* flex-direction: column; */
+}
+.visionContent--star {
+  position: absolute;
+  left: 0;
+  margin-top: 0.3rem;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.textSpecial-noUppercase {
+  color: var(--Main-color);
+  font-weight: 600;
+}
+.textSpecial {
+  /* padding-left: 3rem; */
+  color: var(--Main-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* start Lĩnh vực hoạt động */
+.activeMap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.active--Title {
+  padding-top: 10rem;
+  background: url("../../assets/images/trangchu/backgroundAffterIntroduce.png")
+    top center/ cover no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* height: 23.4rem; */
+  margin-bottom: 0;
+  padding-bottom: 4.4rem;
+}
+.activeMap__content {
+  justify-content: space-evenly;
+}
+.activeContent {
+  width: 27rem;
+}
+.activeBoxImg {
+  width: 100%;
+  background-color: rgb(214, 213, 213);
+  padding-top: 3.2rem;
+  border-radius: 1.3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  height: 22rem;
+  box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.activeMapImg {
+  width: 100%;
+  height: 101%;
+}
+.active--text {
+  font-size: 2.5rem;
+  color: var(--Main-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+.activeBoxImg::after {
+  content: "";
+  position: absolute;
+  width: 1.3rem;
+  height: 0.2rem;
+  background-color: var(--white-color);
+  right: 1.9rem;
+  top: 1.3rem;
+  font-size: 2rem;
+  color: var(--white-color);
+}
+.activeBoxImg p {
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: var(--white-color);
+  left: 0.7rem;
+  top: 1.3rem;
+  border-radius: 50%;
+  /* font-size: 2rem; */
+  color: var(--white-color);
+}
+.activeBoxImg p:nth-child(2) {
+  margin-left: 1.1rem;
+}
+.activeBoxImg p:nth-child(3) {
+  margin-left: 2.2rem;
+}
+
+/* end Lĩnh vực hoạt động */
+/* start richGroupIntroduce */
+.richGroupIntroduce {
+  margin-top: 8rem;
+  padding-top: 9.5rem;
+  padding-bottom: 10rem;
+  background: url("../../assets/images/trangchu/backIntroduce.png") top center/
+    cover no-repeat;
+}
+.richGroupIntroduce__Box {
+  justify-content: space-between;
+  padding: 0 9rem;
+}
+.richGroupIntroduce__Content {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 23rem;
+  margin-bottom: 4rem;
+}
+.richGroupIntroduceIMG {
+  height: 12.5rem;
+  width: 12rem;
+}
+.richGroupIntroduce__Content:nth-child(2) .richGroupIntroduceIMG {
+  padding-top: 1.8rem;
+}
+.richGroupIntroduce__Content:nth-child(4) .richGroupIntroduceIMG {
+  padding-top: 0.7rem;
+}
+.richGroupIntroduce--img {
+}
+.richGroupIntroduce-Title {
+  font-size: 4.5rem;
+  margin-top: 0.5rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.richGroupIntroduce_imgContet {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* end richGroupIntroduce */
+/* start Tin tức sự kiện */
+.newEventClose {
+  display: none;
+}
+.newEventOpen {
+  display: block;
+}
+.newsEvent {
+  padding-top: 9rem;
+  padding-bottom: 10rem;
+  /* overflow: hidden; */
+}
+.newsEvent--Title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.newsEvent_content {
+  width: 100%;
+}
+.newsEvent__nav {
+  background-color: var(--white-color);
+  height: 7rem;
+  border-bottom: solid 1.5rem var(--Main-color);
+}
+
+.newsEvent__list {
+  height: 100%;
+}
+.newsEvent__item:nth-child(1) {
+  /* background-color: var(--Main-color); */
+}
+.newsEvent__item {
+  height: 100%;
+  width: 33.3333%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: #999797;
+  background-color: #f6f6f6;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.background__Checked {
+  background-color: var(--Main-color);
+  color: var(--white-color);
+  line-height: 7rem;
+  position: relative;
+}
+.background__Checked::after {
+  content: "";
+  width: 100%;
+  height: 0.6rem;
+  background-color: var(--Main-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+}
+.newEvent__contentItem {
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 3rem;
+  padding-top: 4rem;
+}
+.contentItem__box {
+  width: 33.3333%;
+  margin: 0 -3rem;
+}
+.newEvent--img {
+  width: 100%;
+  height: 279px;
+}
+.boxContent_news {
+  border-top: solid 2rem #f6f6f6;
+  background-color: var(--white-color);
+  padding: 3rem 1.8rem 1.4rem 1.8rem;
+  height: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // min-height: 100%;
+}
+.newsEvent--title {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #1d1d1d;
+  text-transform: uppercase;
+  border-bottom: solid 0.1rem #1d1d1d;
+  padding: 0 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.newEvent--titleContent {
+  padding: 0 0.8rem;
+  padding-right: 0rem;
+  padding-top: 1.3rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #1d1d1d;
+  padding-bottom: 3.3rem;
+}
+.newEventTime {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.8rem;
+}
+.timeClock {
+  margin-right: 3rem;
+}
+.timeDay {
+  margin-right: 1.5rem;
+  color: #1d1d1d;
+  font-size: 1.6rem;
+  position: relative;
+}
+.timeDay::after {
+  content: "";
+  position: absolute;
+  height: 1.7rem;
+  width: 0.1rem;
+  top: 0;
+  right: -1rem;
+  background-color: #1d1d1d;
+}
+.timeMore {
+  color: #1d1d1d;
+  font-size: 1.6rem;
+}
+/* End tin tức sự kiện */
+/* Dự án tiêu biểu */
+.projectRepresentative {
+  background-color: var(--white-color);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.projectRepresentative__Box {
+}
+.projectRepresentative__nav {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  margin: 0 3rem;
+}
+
+.projectTopic {
+  width: 33.333%;
+  background-color: #bcbcbc;
+  height: 7rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #252525;
+  font-weight: 600;
+  margin: 0 -3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.TopicList {
+  margin: 0 3rem;
+  justify-content: space-between;
+}
+.Topic__ItemContent {
+  width: 33.3333%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin: 0 -3rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding: 2.5rem 1.8rem;
+  overflow: hidden;
+  background-color: #f7f5f6;
+  box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.projectChecked {
+  background-color: var(--Main-color);
+  color: var(--white-color);
+}
+.boxContent_news {
+}
+.topicContnent {
+  color: #191201;
+  font-size: 2.5rem;
+  /* line-height: 5.8rem; */
+  text-align: center;
+  padding-top: 1.7rem;
+  padding-bottom: 3rem;
+}
+.TopicMoreButton {
+  background-color: #3184bf;
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 34rem;
+  height: 7.5rem;
+  text-transform: uppercase;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 3rem;
+  transition: 0.3s;
+}
+.TopicMoreButton:hover {
+  background-color: #6ab3e7;
+}
+.MoreButton-none {
+  display: none;
+}
+.topicMore {
+  margin: 0 0rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.OpenTopic {
+  display: flex;
+}
+.TopicClose {
+  display: none;
+}
+/* Dự án tiêu biểu */
+
+/* Đối tác */
+.continerPartner {
+  padding-bottom: 10rem;
+  padding-top: 8rem;
+}
+
+.partnerList {
+  justify-content: space-evenly;
+}
+.partnerRich {
+  background-color: var(--white-color);
+  width: 26rem;
+  height: 16.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.1rem #ccc;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+.partnerRich--link {
+  /* width: 100%; */
+  /* height: 100%; */
+  padding: auto;
+}
+.parnerRich--img {
+  /* width: 100%; */
+}
+/* End Đối tác */
+
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+///////////////Reponsive/////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+///
+///
+///
+
+/* PC */
+@media only screen and (min-width: 1224px) {
+}
+
+@media only screen and (max-width: 1223px) {
+  .introduceImg {
+    width: 100%;
+    background: url("../../assets/images/trangchu/introduce.png");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    /* height: 54.1rem; */
+  }
+  .homeContainer {
+    padding-top: 8rem;
+  }
+  .titleContiner h2 {
+    font-size: 3.5rem;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+  .titleContiner {
+    margin-bottom: 4rem;
+  }
+  .titleLogo {
+    width: 9rem;
+    height: 8rem;
+  }
+  .introduceContent--rightMission {
+    padding: 2.5rem 0rem;
+    padding-left: 5rem;
+  }
+  .introduceContent--rightVision {
+    padding: 2.5rem 0rem;
+    padding-left: 5rem;
+  }
+  .introduceContent--title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .visoncontentText {
+    padding-left: 3rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .visionContent--text {
+    position: relative;
+    margin-bottom: 1.7rem;
+  }
+  .visionContent--star {
+    position: absolute;
+    left: 0;
+    margin-top: 0.1rem;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  /*  */
+  .active--Title {
+    margin-bottom: 0;
+    /*  */
+  }
+
+  /* start RichIntroduce */
+  .richGroupIntroduce__Box {
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+  /* end RichIntroduce */
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .introduceBox::after {
+    width: 0%;
+  }
+  .rightMission50Persent,
+  .rightVision50Persent {
+    width: 100%;
+  }
+  .introduceContent--rightVision,
+  .introduceContent--rightMission {
+    /* padding: 3.5rem 0rem; */
+    padding-left: 0rem;
+  }
+
+  .activeMap {
+    padding-top: 0rem;
+  }
+  .richGroupIntroduce__Box {
+    justify-content: space-around;
+    padding: 0 4rem;
+  }
+  .richGroupIntroduce__Content {
+    width: 40%;
+  }
+  .activeMap__content {
+    padding: 0 0.8rem;
+    justify-content: space-between;
+  }
+  /* newsEvent  */
+  .newsEvent__item {
+    height: 100%;
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+  .newsEvent__nav {
+    border-bottom: solid 1rem var(--Main-color);
+  }
+  .background__Checked {
+    background-color: var(--Main-color);
+    color: var(--white-color);
+    line-height: 7rem;
+    position: relative;
+  }
+  .boxContent_news {
+    border-top: solid 1rem #f6f6f6;
+    background-color: var(--white-color);
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .contentItem__box {
+    width: 50%;
+    margin: 0 -3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* project */
+  .projectTopic {
+    font-size: 1.8rem;
+    height: 5rem;
+  }
+  .Topic__ItemContent {
+    width: 50%;
+  }
+  .TopicMoreButton {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 30rem;
+    height: 6.5rem;
+  }
+  /*End project */
+}
+
+@media only screen and (max-width: 740px) {
+  .introduceBox::after {
+    width: 0%;
+  }
+  .rightMission50Persent,
+  .rightVision50Persent {
+    width: 100%;
+  }
+  .rightMission50Persent {
+    padding-bottom: 2rem;
+  }
+  .introduceContent--rightMission {
+    padding: 3.5rem 0.8rem 0 0.8rem;
+  }
+  .introduceContent--rightVision {
+    padding: 2.5rem 0.8rem;
+  }
+  /* active */
+  .activeMap {
+    padding-top: 0rem;
+  }
+  .activeMap__content {
+    padding: 0 0.8rem;
+    justify-content: space-evenly;
+  }
+  /* RichIntroduce */
+  .richGroupIntroduce__Box {
+    justify-content: space-around;
+    padding: 0 4rem;
+  }
+  .richGroupIntroduce__Content {
+    width: 40%;
+  }
+  .richGroupIntroduce__Content {
+    height: 20rem;
+    margin-bottom: 4rem;
+  }
+  .richGroupIntroduce-Title {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    /* line-height: 2rem; */
+  }
+  .richGroupIntroduce_imgContet {
+    font-size: 1.5rem;
+    color: var(--white-color);
+  }
+
+  /* newsEvent  */
+  .newsEvent {
+    padding-bottom: 0;
+  }
+  .newsEvent__nav {
+    border-bottom: solid 1rem var(--Main-color);
+  }
+  .newsEvent__item {
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 7rem;
+  }
+  .background__Checked {
+    background-color: var(--Main-color);
+    color: var(--white-color);
+    line-height: 7.5rem;
+    position: relative;
+  }
+  .boxContent_news {
+    border-top: solid 1rem #f6f6f6;
+    background-color: var(--white-color);
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  .newsEvent_content {
+    padding: 0 0.8rem;
+  }
+  .newEvent__contentItem {
+    margin: 0 0rem;
+  }
+  .contentItem__box {
+    width: 100%;
+    margin: 0 0rem;
+    margin-bottom: 2.5rem;
+  }
+  /* newsEvent  */
+
+  /* project */
+  .projectRepresentative__Box {
+    padding: 0 0.8rem;
+  }
+  .projectTopic {
+    font-size: 1.4rem;
+    height: 5rem;
+    text-align: center;
+  }
+
+  .Topic__ItemContent {
+    margin: 0 0rem;
+  }
+  .TopicList {
+    margin: 0 0rem;
+  }
+  .Topic__ItemContent {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .TopicMoreButton {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 25rem;
+    height: 5.5rem;
+    text-transform: uppercase;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 3rem;
+  }
+  /*End project */
+}

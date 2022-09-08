@@ -1,0 +1,60 @@
+:root {
+  --white-color: #fff;
+  --Main-color: #1670c5;
+  --borderColorTitle: #00aeef;
+  --Main-colorHover: #6db2f3;
+  --text-color: #333;
+  --title-color: #ff7e00;
+  --text-bannerColor: #162432;
+  --text-footerColor: #191201;
+  --nav-height: 10rem;
+}
+// img {
+//   width: 100%;
+// }
+button,
+input,
+[tabindex] {
+  // outline: none;
+  // border: none;
+}
+
+a[href] {
+  // color: var(--text-color);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: fontMain;
+  src: url("../../assets/fontUTM/UTM\ Swiss\ Condensed.ttf");
+}
+
+@keyframes come_out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: fontMain;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* repontsive */

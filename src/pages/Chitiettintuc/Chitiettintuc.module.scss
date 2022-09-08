@@ -1,0 +1,1008 @@
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+/////////////////////////base///////////////////////////////
+
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.grid.wide {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row-gutter {
+  display: flex;
+  /* dcac item tu dong nam ngang */
+  flex-wrap: wrap;
+  /* d  khi chieu ngang columns vuot qua row-> tu cuong hang*/
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-gutter .col-gutter {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.row .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.M-0 {
+  display: none;
+}
+
+.M-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.M-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.M-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.M-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.M-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.M-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.M-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.M-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.M-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.M-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.M-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.M-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.M-o-1 {
+  margin-left: 8.33333%;
+}
+
+.M-o-2 {
+  margin-left: 16.66667%;
+}
+
+.M-o-3 {
+  margin-left: 25%;
+}
+
+.M-o-4 {
+  margin-left: 33.333333%;
+}
+
+.M-o-5 {
+  margin-left: 41.66667%;
+}
+
+.M-o-6 {
+  margin-left: 50%;
+}
+
+.M-o-7 {
+  margin-left: 58.33333%;
+}
+
+.M-o-8 {
+  margin-left: 66.66667%;
+}
+
+.M-o-9 {
+  margin-left: 75%;
+}
+
+.M-o-10 {
+  margin-left: 83.33333%;
+}
+
+.M-o-11 {
+  margin-left: 91.66667%;
+}
+
+/* Tablet - px low resolution */
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .wide {
+    width: 664px;
+  }
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 740px) {
+  .row-gutter {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .col-gutter {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .T-0 {
+    display: none;
+  }
+  .T-1,
+  .T-2,
+  .T-3,
+  .T-4,
+  .T-5,
+  .T-6,
+  .T-7,
+  .T-8,
+  .T-9,
+  .T-10,
+  .T-11,
+  .T-12 {
+    display: block;
+  }
+  .T-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .T-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .T-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .T-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .T-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .T-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .T-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .T-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .T-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .T-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .T-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .T-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .T-o-1 {
+    margin-left: 8.33333%;
+  }
+  .T-o-2 {
+    margin-left: 16.66667%;
+  }
+  .T-o-3 {
+    margin-left: 25%;
+  }
+  .T-o-4 {
+    margin-left: 33.333333%;
+  }
+  .T-o-5 {
+    margin-left: 41.66667%;
+  }
+  .T-o-6 {
+    margin-left: 50%;
+  }
+  .T-o-7 {
+    margin-left: 58.33333%;
+  }
+  .T-o-8 {
+    margin-left: 66.66667%;
+  }
+  .T-o-9 {
+    margin-left: 75%;
+  }
+  .T-o-10 {
+    margin-left: 83.33333%;
+  }
+  .T-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* Pc low > (>1113px)*/
+
+@media only screen and (min-width: 1113px) {
+  .row-gutter {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .col-gutter {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .PC-0 {
+    display: none;
+  }
+  .PC-1,
+  .PC-2,
+  .PC-3,
+  .PC-4,
+  .PC-5,
+  .PC-6,
+  .PC-7,
+  .PC-8,
+  .PC-9,
+  .PC-10,
+  .PC-11,
+  .PC-12,
+  .PC-20 {
+    display: block;
+  }
+  .PC-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .PC-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .PC-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .PC-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .PC-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .PC-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .PC-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .PC-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .PC-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .PC-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .PC-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .PC-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .PC-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .PC-o-1 {
+    margin-left: 8.33333%;
+  }
+  .PC-o-2 {
+    margin-left: 16.66667%;
+  }
+  .PC-o-3 {
+    margin-left: 25%;
+  }
+  .PC-o-4 {
+    margin-left: 33.333333%;
+  }
+  .PC-o-5 {
+    margin-left: 41.66667%;
+  }
+  .PC-o-6 {
+    margin-left: 50%;
+  }
+  .PC-o-7 {
+    margin-left: 58.33333%;
+  }
+  .PC-o-8 {
+    margin-left: 66.66667%;
+  }
+  .PC-o-9 {
+    margin-left: 75%;
+  }
+  .PC-o-10 {
+    margin-left: 83.33333%;
+  }
+  .PC-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* px low resolution -> 1039px kéo nhẹ là tự đổi*/
+/* @media only screen and (min-width: 1024px) and (max-width: 1239px) { có thể để màn này */
+
+@media only screen and (min-width: 1024px) and (max-width: 1239px) {
+  .wide {
+    width: 984px;
+  }
+  .wide .row-gutter {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .col-gutter {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .wide .PC-0 {
+    display: none;
+  }
+  .wide .PC-1,
+  .wide .PC-2,
+  .wide .PC-3,
+  .wide .PC-4,
+  .wide .PC-5,
+  .wide .PC-6,
+  .wide .PC-7,
+  .wide .PC-8,
+  .wide .PC-9,
+  .wide .PC-10,
+  .wide .PC-11,
+  .wide .PC-12 {
+    display: block;
+  }
+  .wide .PC-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+  .wide .PC-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+  .wide .PC-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .wide .PC-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .wide .PC-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .wide .PC-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .wide .PC-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .wide .PC-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+  .wide .PC-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .wide .PC-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+  .wide .PC-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+  .wide .PC-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .wide .PC-o-1 {
+    margin-left: 8.33333%;
+  }
+  .wide .PC-o-2 {
+    margin-left: 16.66667%;
+  }
+  .wide .PC-o-3 {
+    margin-left: 25%;
+  }
+  .wide .PC-o-4 {
+    margin-left: 33.333333%;
+  }
+  .wide .PC-o-5 {
+    margin-left: 41.66667%;
+  }
+  .wide .PC-o-6 {
+    margin-left: 50%;
+  }
+  .wide .PC-o-7 {
+    margin-left: 58.33333%;
+  }
+  .wide .PC-o-8 {
+    margin-left: 66.66667%;
+  }
+  .wide .PC-o-9 {
+    margin-left: 75%;
+  }
+  .wide .PC-o-10 {
+    margin-left: 83.33333%;
+  }
+  .wide .PC-o-11 {
+    margin-left: 91.66667%;
+  }
+}
+
+/* dung cho man hinh do phan giai thap */
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+//////////////////////CSS Chitiettintucg/////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+///
+///
+///
+/* news */
+.mainContiner {
+  padding-top: 10rem;
+  justify-content: space-between;
+}
+.continerTable {
+}
+.conTinerNews {
+  display: flex;
+  flex-direction: column;
+}
+.newsTitle {
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  margin-bottom: 3rem;
+}
+.newsContiner {
+  width: 100%;
+}
+.newsBox {
+  margin-bottom: 2.5rem;
+}
+.newsImg {
+  display: flex;
+  width: 100%;
+}
+.news--Img {
+  width: 13.5rem;
+  height: 9rem;
+}
+.newsContent {
+  padding-left: 2rem;
+}
+.imgTitle {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #3a3a3a;
+}
+.imgContentTitle {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #8a8a8a;
+}
+/*end news */
+
+//////////////////////////////////////////////////////////////@at-root
+///
+///
+///
+body {
+  background-color: #f6f6f6;
+}
+.mainContiner {
+  flex-wrap: wrap-reverse;
+}
+.continerNews {
+}
+.continerDocument {
+}
+.TitleContiner {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  margin-bottom: 2.5rem;
+}
+.TitleContent {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #3a3a3a;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+.banerContiner {
+  // background: url("../../assets/images/chiTietTinTuc/banner.png") top center/
+  //   cover no-repeat;
+  height: 55rem;
+  margin-bottom: 3rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.netWorkContiner {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.networkContent {
+  display: flex;
+  /* margin-bottom: 2rem; */
+}
+.facebookButton {
+  height: 2.5rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2.9rem;
+  background-image: linear-gradient(#4d68b9, #3e57a2);
+  font-weight: 600;
+  border: none;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0.3rem;
+  padding: 0 0.8rem;
+}
+.facebookButton:active {
+  background-image: linear-gradient(#3e57a2, #4d68b9);
+}
+.icon--like {
+  margin-right: 0.1rem;
+}
+.facebookCountLike {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  color: #6f7684;
+  height: 100%;
+  /* padding: 0 .8rem 0 .8rem; */
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  background: url("../../assets/images/chiTietTinTuc/fb.png") top center/ cover
+    no-repeat;
+}
+.tweetCountLike {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  height: 104%;
+  /* padding: 0 .8rem 0 .8rem; */
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  color: #515151;
+  background: url("../../assets/images/chiTietTinTuc/tw.png") top center/ cover
+    no-repeat;
+}
+.tweetButton {
+  color: #333333;
+  background-image: linear-gradient(#f7f7f7, #e0e0e0);
+  border: solid 0.1rem #e0e0e0;
+  font-weight: 600;
+  padding-left: 0.4rem;
+  padding-right: 0.7rem;
+  cursor: pointer;
+  transition: 0.3rem;
+  border-radius: 0.3rem;
+}
+.tweetButton:active {
+  background-image: linear-gradient(#e0e0e0, #f7f7f7);
+}
+.icon--tweet {
+  color: #01acee;
+}
+.fa-brands {
+}
+
+.networkTime {
+  display: flex;
+  align-items: center;
+}
+.timeCalendar {
+  margin-right: 1rem;
+}
+.timeDays {
+  font-size: 1.5rem;
+  color: #959595;
+  position: relative;
+}
+.timeDays:nth-child(3) {
+  margin-left: 1.2rem;
+}
+.timeDays:nth-child(2)::after {
+  content: "";
+  width: 0.1rem;
+  height: 1.4rem;
+  position: absolute;
+  bottom: 0;
+  right: -0.7rem;
+  background-color: #959595;
+}
+
+.continerContact {
+  padding-top: 4.7rem;
+}
+.contacts {
+  width: 37.5%;
+}
+.contactHotline {
+  display: flex;
+  background-color: var(--Main-color);
+  color: var(--white-color);
+  text-transform: uppercase;
+  align-items: center;
+  /* justify-content: center; */
+  height: 7.7rem;
+
+  position: relative;
+  padding-left: 2.8rem;
+  margin-bottom: 2rem;
+  padding-right: 0.6rem;
+}
+.contactHotline:nth-child(3) {
+  margin-bottom: 0;
+}
+.hotlinePerson {
+  /* position: absolute; */
+}
+.hotlineTitle {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-left: 2rem;
+}
+.contactNews {
+  width: 62.5%;
+  padding-left: 3.3rem;
+  position: relative;
+}
+.newsMore {
+  font-size: 1.9rem;
+  color: #3a3a3a;
+  /* line-height: 2.8rem; */
+  margin-bottom: 2.5rem;
+}
+.boxNew {
+  margin: 0 1.5rem;
+  justify-content: space-between;
+}
+.newsContentCT {
+  margin: 0 -1.5rem;
+  background-color: #e8e8e8;
+}
+.newsImgCT {
+  width: 100%;
+  height: 115px;
+}
+.newsContent-p {
+  /* height: 5rem; */
+  /* background-color: #e8e8e8; */
+  font-weight: 600;
+  padding: 0.5rem 1.3rem 0.8rem 1.3rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #1d1d1d;
+}
+.newsAll {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.newAllText {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #3a3a3a;
+}
+
+.sendQuestion {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+.sendRichTitle {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 2.85rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 0.1rem #acacac;
+  width: fit-content;
+  color: #3a3a3a;
+}
+.sendRichContent {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-bottom: 2.5rem;
+}
+/* PC */
+@media only screen and (min-width: 1224px) {
+}
+
+@media only screen and (max-width: 1239px) {
+  .mainContiner {
+    /* flex-direction: column; */
+  }
+  .conTinerNews.PC-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .mainContiner {
+    flex-direction: column;
+  }
+  .conTinerNews.PC-3 {
+    margin-top: 4rem;
+    flex: 0 0 30%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .mainContiner {
+    flex-direction: column;
+  }
+  .conTinerNews.PC-3 {
+    margin-top: 4rem;
+    flex: 0 0 30%;
+    max-width: 100%;
+  }
+  .mainContiner {
+    padding: 0 0.8rem;
+    flex-direction: column;
+  }
+
+  /*end news */
+  table {
+    margin-top: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  tr th,
+  tr td {
+    height: 4.5rem;
+    border-top: solid 0.1rem #acacac;
+  }
+  tr th {
+    border-top: solid 0.3rem #acacac;
+  }
+  tr th:nth-child(1),
+  tr td:nth-child(1) {
+    width: 9rem;
+    padding-left: 1.5rem;
+    /* background-color: aqua; */
+    text-align: left;
+  }
+  tr th:nth-child(2),
+  tr td:nth-child(2) {
+    width: 60.5rem;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+  tr th:nth-child(3),
+  tr td:nth-child(3) {
+    width: 18rem;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+  tr th:nth-child(4),
+  tr td:nth-child(4) {
+    width: 18rem;
+    text-align: center;
+  }
+  .newsImg {
+    flex-direction: column;
+    margin-bottom: 4rem;
+    width: 100%;
+    /* height: 20%; */
+  }
+
+  .news--Img {
+    width: 100%;
+    height: 30rem;
+  }
+  .newsContent {
+    padding-top: 1rem;
+    padding-left: 0rem;
+  }
+  .imgTitle {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #3a3a3a;
+  }
+  .imgContentTitle {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #8a8a8a;
+  }
+}
+
+/* PC */
+@media only screen and (min-width: 1224px) {
+}
+
+@media only screen and (max-width: 1223px) {
+  .mainContiner {
+    padding-top: 3rem;
+    justify-content: space-between;
+  }
+  .hotlineTitle {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin-left: 0.2rem;
+  }
+  .contactHotline {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .contactHotline {
+    display: flex;
+    background-color: var(--Main-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    align-items: center;
+    /* justify-content: center; */
+    height: 7.7rem;
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .hotlineTitle {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .networkContent {
+    display: flex;
+    margin-top: 0.7rem !important;
+  }
+  .netWorkContiner {
+    /* flex-direction: column-reverse; */
+  }
+  .continerContact {
+    flex-wrap: wrap-reverse;
+  }
+
+  .contactHotline {
+    display: flex;
+    background-color: var(--Main-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    align-items: center;
+    /* justify-content: center; */
+    height: 7.7rem;
+    position: relative;
+    padding-left: 0.2rem;
+    margin-bottom: 2rem;
+    margin: 0 -1.5rem;
+    width: 33.333%;
+    justify-content: center;
+  }
+  .contactNews {
+    width: 100%;
+    padding-left: 0;
+    /* display: flex; */
+  }
+  .contacts {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    margin: 0 1.5rem;
+    justify-content: space-between;
+  }
+  .hotlineTitle {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-left: 0.3rem;
+  }
+  .hotlinePerson {
+    height: 2rem;
+    width: 2rem;
+    /* display: none; */
+  }
+  .newsAll {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .sendQuestion {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+}

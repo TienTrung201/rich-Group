@@ -46,7 +46,7 @@ function Home() {
           </div>
         );
       }
-      return;
+      return <></>;
     });
     return news;
   }, [listnews]);
@@ -83,7 +83,7 @@ function Home() {
           </div>
         );
       }
-      return;
+      return <></>;
     });
     return news;
   }, [listnews]);
@@ -121,7 +121,7 @@ function Home() {
           </div>
         );
       }
-      return;
+      return <></>;
     });
     return news;
   }, [listnews]);

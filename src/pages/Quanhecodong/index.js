@@ -32,7 +32,7 @@ function QuanHeCoDong() {
         </tr>
       );
     }
-    return;
+    return <></>;
   });
   const listRecruitments = [
     "Công bố thông tin",

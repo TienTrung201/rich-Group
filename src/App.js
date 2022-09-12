@@ -8,18 +8,26 @@ import { DefaultLayout } from "@/components/Layout";
 import { newspapers } from "./pages/Chitiettintuc/ChiTietTinTucSlice";
 import Chitiettintuc from "./pages/Chitiettintuc";
 import "./pages/Quanhecodong/QuanHeCoDongSlice";
-import { addDocument, getData, useGetData } from "./firebase/services";
-import { useEffect, useMemo } from "react";
+import { addDocument, getData } from "./firebase/services";
+import { useEffect, useLayoutEffect, useMemo } from "react";
 
 function App() {
-  // useEffect(() => {
-  //   newspapers.map((news) => {
-  //     addDocument("news", news);
-  //   });
-  // });
-  // readData("news");
-  useGetData("news");
-  const news = useMemo(() => {}, []);
+  let getDatas;
+  useEffect(() => {
+    // newspapers.map((news) => {
+    //   console.log(news);
+    //   addDocument("news", news);
+    // });
+    getData("news")
+      .then((data) => {
+        return data;
+      })
+      .then((data) => {
+        getDatas = data;
+        // dùng redux toolkit như bình thường dispas vào
+      });
+  }, []);
+  console.log(getDatas);
   return (
     <Router>
       <div className="App">

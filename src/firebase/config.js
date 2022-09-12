@@ -36,10 +36,10 @@ export const auth = getAuth(app);
 // onAuthStateChanged(auth, (user) => {
 //   // Check for user status
 // });
-if (window.location.hostname === "localhost") {
-  connectAuthEmulator(auth, "http://localhost:9099");
-  connectFirestoreEmulator(db, "localhost", 8080);
-}
+// if (window.location.hostname === "localhost") {
+//   connectAuthEmulator(auth, "http://localhost:9099");
+//   connectFirestoreEmulator(db, "localhost", 8080);
+// }
 // Get a list of cities from your database
 async function getCities(db) {
   const citiesCol = collection(db, "cities");

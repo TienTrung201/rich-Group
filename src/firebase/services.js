@@ -1,12 +1,5 @@
 import { db } from "./config";
-import {
-  collection,
-  addDoc,
-  serverTimestamp,
-  getDocs,
-  onSnapshot,
-} from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 
 // collection là đối tượng ví dụ như user{} để lưu api
 // da ta chính là dối tượng để thêm vào
@@ -14,7 +7,7 @@ export const addDocument = async (collectionName, data) => {
   try {
     await addDoc(collection(db, collectionName), {
       ...data,
-      createdAt: serverTimestamp(),
+      // createdAt: serverTimestamp(),
     });
   } catch (e) {
     console.error("Error adding document: ", e);
@@ -23,7 +16,6 @@ export const addDocument = async (collectionName, data) => {
 
 export const getData = async (collectionName) => {
   const querySnapshot = await getDocs(collection(db, collectionName));
-  let data = [];
   // querySnapshot.forEach((doc) => {
   //   console.log(`${doc.id} => ${doc.data()}`);
   //   // console.log(onSnapshot(doc));
@@ -38,4 +30,16 @@ export const getData = async (collectionName) => {
   });
   // console.log(getdata);
   return getdata;
+};
+
+export const getdataTest = (collectionName) => {
+  const querySnapshot = getDocs(collection(db, collectionName));
+  let data = [];
+  querySnapshot.then((data) => {
+    data.docs.forEach((doc) => {
+      console.log(doc.data());
+    });
+    console.log(data);
+  });
+  return data;
 };

@@ -1,10 +1,15 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export const newsSlice = createSlice({
   name: "newsSlice",
   initialState: {
     status: "idle",
     newspapers: [],
+  },
+  reducers: {
+    getDataNews: (state, action) => {
+      state.newspapers.push(action.payload);
+    },
   },
 });
 export default newsSlice;

@@ -1,33 +1,47 @@
 // import { useEffect } from "react";
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 // import { shareholders } from "@/pages/Quanhecodong/QuanHeCoDongSlice";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; //npm i react-router-dom
 import { publicRoutes } from "@/routes";
 import { DefaultLayout } from "@/components/Layout";
-import { newspapers } from "./pages/Chitiettintuc/ChiTietTinTucSlice";
+import newsSlice, {
+  newspapers,
+} from "./pages/Chitiettintuc/ChiTietTinTucSlice";
 import Chitiettintuc from "./pages/Chitiettintuc";
 import "./pages/Quanhecodong/QuanHeCoDongSlice";
-import { addDocument, getData } from "./firebase/services";
-import { useEffect, useLayoutEffect, useMemo } from "react";
-
+// import { addDocument, getData, getdataTest } from "./firebase/services";
+import { useEffect } from "react";
+import { useGetdata } from "./hooks/useFirestore";
 function App() {
-  let getDatas;
-  useEffect(() => {
-    // newspapers.map((news) => {
-    //   console.log(news);
-    //   addDocument("news", news);
-    // });
-    getData("news")
-      .then((data) => {
-        return data;
-      })
-      .then((data) => {
-        getDatas = data;
-        // dùng redux toolkit như bình thường dispas vào
-      });
-  }, []);
-  console.log(getDatas);
+  const Dispatch = useDispatch();
+  // let getDatas;
+  // useEffect(() => {
+  //   newspapers.map((news) => {
+  //     console.log(news);
+  //     addDocument("news", news);
+  //   });
+  //   // getData("news")
+  //   //   .then((data) => {
+  //   //     return data;
+  //   //   })
+  //   //   .then((data) => {
+  //   //     getDatas = data;
+  //   //     data.forEach((data) => {});
+  //   //     // console.log(getDatas);
+  //   //     // dùng redux toolkit như bình thường dispas vào
+  //   //   });
+  // }, []);
+  // getdataTest("news");
+  // console.log(getDatas);
+
+  // const data = useGetdata("news");
+  // useEffect(() => {
+  //   data.forEach((data) => {
+  //     Dispatch(newsSlice.actions.getDataNews(data));
+  //   });
+  // }, [data, Dispatch]);
+
   return (
     <Router>
       <div className="App">

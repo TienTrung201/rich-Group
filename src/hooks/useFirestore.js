@@ -1,31 +1,21 @@
-// import React, { useEffect, useState } from "react";
-// import { db } from "../firebase/config";
+import { useEffect, useState } from "react";
+import { db } from "../firebase/config";
 
-import {
-  collection,
-  addDoc,
-  serverTimestamp,
-  getDocs,
-  onSnapshot,
-} from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
-// export const useGetdata = async (collectionName) => {
-//   const querySnapshot = await getDocs(collection(db, collectionName));
-//   let data = [];
-//   // querySnapshot.forEach((doc) => {
-//   //   console.log(`${doc.id} => ${doc.data()}`);
-//   //   // console.log(onSnapshot(doc));
-//   // });
+export const useGetdata = (collectionName) => {
+  const [data, setData] = useState([]);
+  const querySnapshot = getDocs(collection(db, collectionName));
+  useEffect(() => {
+    querySnapshot.then((data) => {
+      const documents = data.docs.map((doc) => {
+        return doc.data();
+        // console.log(doc.data());
+      });
+      setData(documents);
+      // console.log(data);
+    });
+  }, [collectionName, querySnapshot]);
 
-//   useEffect(() => {
-//     const getdata = querySnapshot.docs.map((doc) => {
-//       // bug không biết gì thay đổi để useEffect
-//       return {
-//         ...doc.data(),
-//         id: doc.id,
-//       };
-//     });
-//     data = getdata;
-//   }, []);
-//   return data;
-// };
+  return data;
+};

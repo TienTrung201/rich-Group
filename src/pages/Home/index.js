@@ -46,13 +46,14 @@ function Home() {
           </div>
         );
       }
-      return <></>;
+      return false;
     });
     return news;
   }, [listnews]);
   const tinTapChi = useMemo(() => {
     const news = listnews.map((news, index) => {
       let count = 3;
+      // const isTapchi=news.type === "Tin tạp chí"&&count > 0?true:false;
       if (news.type === "Tin tạp chí" && count > 0) {
         return (
           <div key={index} className={cx("contentItem__box")}>
@@ -83,7 +84,7 @@ function Home() {
           </div>
         );
       }
-      return <></>;
+      return false;
     });
     return news;
   }, [listnews]);
@@ -121,7 +122,7 @@ function Home() {
           </div>
         );
       }
-      return <></>;
+      return false;
     });
     return news;
   }, [listnews]);

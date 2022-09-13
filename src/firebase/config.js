@@ -1,15 +1,10 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 // import { getAuth, onAuthStateChanged } from "firebase/auth";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
-import {
-  collection,
-  connectFirestoreEmulator,
-  getDocs,
-  getFirestore,
-} from "firebase/firestore";
+import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 import { connectAuthEmulator, getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -28,7 +23,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 
 export const db = getFirestore(app);
 export const auth = getAuth(app);
@@ -36,15 +31,15 @@ export const auth = getAuth(app);
 // onAuthStateChanged(auth, (user) => {
 //   // Check for user status
 // });
-// if (window.location.hostname === "localhost") {
-//   connectAuthEmulator(auth, "http://localhost:9099");
-//   connectFirestoreEmulator(db, "localhost", 8080);
-// }
-// Get a list of cities from your database
-async function getCities(db) {
-  const citiesCol = collection(db, "cities");
-  const citySnapshot = await getDocs(citiesCol);
-  const cityList = citySnapshot.docs.map((doc) => doc.data());
-  return cityList;
+if (window.location.hostname === "localhost") {
+  connectAuthEmulator(auth, "http://localhost:9099");
+  connectFirestoreEmulator(db, "localhost", 8080);
 }
+// Get a list of cities from your database
+// async function getCities(db) {
+//   const citiesCol = collection(db, "cities");
+//   const citySnapshot = await getDocs(citiesCol);
+//   const cityList = citySnapshot.docs.map((doc) => doc.data());
+//   return cityList;
+// }
 // export default firebase;

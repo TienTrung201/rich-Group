@@ -1,20 +1,18 @@
 // import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 // import { shareholders } from "@/pages/Quanhecodong/QuanHeCoDongSlice";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; //npm i react-router-dom
 import { publicRoutes } from "@/routes";
 import { DefaultLayout } from "@/components/Layout";
-import newsSlice, {
-  newspapers,
-} from "./pages/Chitiettintuc/ChiTietTinTucSlice"; // newspapers,
+import newsSlice from "./pages/Chitiettintuc/ChiTietTinTucSlice"; // newspapers, // newspapers,
 import Chitiettintuc from "./pages/Chitiettintuc";
 import "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { addDocument } from "./firebase/services";
-import { useEffect, useLayoutEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useGetdata } from "./hooks/useGetData";
-import { Listnewspapers } from "./redux/selector";
-import { addDocument } from "./firebase/services";
+// import { Listnewspapers } from "./redux/selector";
+// import { addDocument } from "./firebase/services";
 // import { shareholders } from "./pages/Quanhecodong/QuanHeCoDongSlice";
 function App() {
   // const listNews = useSelector(Listnewspapers);
@@ -29,7 +27,6 @@ function App() {
     // });
     // console.log(newsSlice.getInitialState());
   }, []);
-  // const newspapers = listNews;
   const [callNumber, setCallNumber] = useState(0);
   const data = useGetdata("news");
   useEffect(() => {

@@ -1,13 +1,19 @@
 import { db } from "./config";
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  getDocs,
+  serverTimestamp,
+} from "firebase/firestore";
 
 // collection là đối tượng ví dụ như user{} để lưu api
 // da ta chính là dối tượng để thêm vào
 export const addDocument = async (collectionName, data) => {
   try {
+    const timeNews = serverTimestamp();
     await addDoc(collection(db, collectionName), {
       ...data,
-      // createdAt: serverTimestamp(),
+      day: timeNews,
     });
   } catch (e) {
     console.error("Error adding document: ", e);

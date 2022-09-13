@@ -25,7 +25,6 @@ export const newspapers = [
     hotNew: false,
     path: "hanh-trinh-cui-4-nguoi-o-campuchia",
     comment: 2,
-    day: "14/12/2001",
   },
   {
     id: 2,
@@ -37,7 +36,6 @@ export const newspapers = [
     src: "haNoi.jpg",
     path: "hanoi-phat-sinh-nhieu-diem-un-tac-moi",
     comment: 4,
-    day: "24/11/2013",
   },
   {
     id: 3,
@@ -49,7 +47,6 @@ export const newspapers = [
     src: "ukrina.jpg",
     path: "mua-dong-lanh-gia-thu-thach-quyet-tam-cua-chau-au-voi-ukraine",
     comment: 5,
-    day: "14/12/2008",
   },
   {
     id: 4,
@@ -61,7 +58,6 @@ export const newspapers = [
     src: "nhanVien.jpg",
     path: "cach-doi-quyen-loi-khi-la-nhan-vien-moi",
     comment: 2,
-    day: "24/03/2022",
   },
   {
     id: 5,
@@ -73,7 +69,6 @@ export const newspapers = [
     src: "viettel.jpg",
     path: "nguoi-tre-viettel-dong-gop-3000000-sang-kien-lam-loi400-ty",
     comment: 7,
-    day: "24/08/1992",
   },
   {
     id: 6,
@@ -85,7 +80,6 @@ export const newspapers = [
     src: "samsung.jpg",
     path: "nhan-su-samsun-tham-gia-hoi-dong-quan-tri-dnp",
     comment: 33,
-    day: "22/10/2000",
   },
   {
     id: 7,
@@ -97,7 +91,6 @@ export const newspapers = [
     type: "Tin cổ đông",
     path: "to-hop-tien-ich-xanh-taij-do-thi-vimhom",
     comment: 7,
-    day: "14/04/2019",
   },
   {
     id: 8,
@@ -109,7 +102,6 @@ export const newspapers = [
     type: "Tin cổ đông",
     path: "nhieu-doanh-nghiep-chon-aqua-city-de-mo-rong-hoat-dong-kinh-doanh",
     comment: 8,
-    day: "02/02/2012",
   },
   {
     id: 9,
@@ -121,6 +113,5 @@ export const newspapers = [
     content:
       "(TN&MT) - Bộ Giao thông Vận tải Mỹ cho biết, Bộ này sẽ cấp 1,66 tỷ USD tài trợ cho các chính quyền thành phố và bang để mua 1.800 xe buýt nhằm chuyển sang phương tiện đi lại sạch hơn, ít phát thải hơn./Ngân sách dành cho 150 đội xe buýt sẽ được lấy từ khoản quỹ 1.000 tỷ USD theo luật về cơ sở hạ tầng năm 2021, giúp các thành phố và bang loại bỏ những chiếc xe buýt cũ gây ô nhiễm./Nhà Trắng cho biết, khoản tiền sẽ được chi để mua 1.100 xe buýt không phát thải khí carbon để bổ sung cho 1.300 xe buýt không phát thải hiện có, cùng với 700 xe buýt khác bao gồm các mẫu xe hybrid (lai điện và xăng), xe chạy bằng khí đốt tự nhiên và dầu diesel. Trao đổi với các phóng viên, ông Mitch Landrieu, điều phối viên cơ sở hạ tầng của Nhà Trắng cho biết: “Những khoản tài trợ này sẽ được sử dụng ở mọi nơi trên nước Mỹ”./Ngân sách dành cho 150 đội xe buýt sẽ được lấy từ khoản quỹ 1.000 tỷ USD theo luật về cơ sở hạ tầng năm 2021, giúp các thành phố và bang loại bỏ những chiếc xe buýt cũ gây ô nhiễm./Theo kế hoạch, trong 5 năm tới, Mỹ sẽ dành 5,5 tỷ USD hỗ trợ dịch vụ xe buýt theo hướng thân thiện với môi trường, tăng gấp 6 lần mức tài trợ trước đó, và 2 tỷ USD để mua và cải tạo xe buýt và xây dựng các cơ sở bảo dưỡng xe buýt./Memphis sẽ nhận được 54 triệu USD để xây dựng một cơ sở vận hành/bảo trì, trong khi New Jersey Transit sẽ nhận được 44,6 triệu USD để cải tạo nhà để xe Union City gần New York và tạo ra một bến xe buýt công cộng.",
     comment: 5,
-    day: "04/12/2000",
   },
 ];

@@ -2,12 +2,12 @@ import { useSelector } from "react-redux/es/exports";
 import { Listnewspapers } from "@/redux/selector";
 import classNames from "classnames/bind";
 import styles from "@/pages/Tintuc/Tintuc.module.scss";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; //npm i react-router-dom
+
 /// render true thì k chạy path
 const cx = classNames.bind(styles);
 function TinTuc() {
   const listNews = useSelector(Listnewspapers);
-
   const tinTapDoanContent = listNews.filter((news) => {
     return news.type === "Tin tập đoàn";
   });
@@ -281,7 +281,7 @@ function TinTuc() {
                       </div>
                     );
                   }
-                  return <></>;
+                  return false;
                 })}
               </div>
             </article>

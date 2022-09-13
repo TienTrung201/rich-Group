@@ -15,6 +15,7 @@ const cx = classNames.bind(styles);
 
 function Chitiettintuc({ news, title, img, content }) {
   const listNews = useSelector(Listnewspapers);
+  // console.log(listNews);
   const [like, setLike] = useState(653);
   const [tweet, setTweet] = useState(19);
   const titleNews = useRef();

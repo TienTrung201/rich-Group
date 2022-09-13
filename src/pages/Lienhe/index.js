@@ -1,6 +1,8 @@
 import classNames from "classnames/bind";
 import styles from "@/pages/Lienhe/Lienhe.module.scss";
 import FormMessage from "./FormMessage";
+import { Listnewspapers } from "@/redux/selector";
+import { useSelector } from "react-redux";
 
 const cx = classNames.bind(styles);
 
@@ -40,7 +42,7 @@ function LienHe() {
                   alt=""
                   className={cx("ContactPhone")}
                 />
-                033 623 sssssss7176
+                033 623 7176
               </p>
               <p className={cx("phoneAndEmail")}>
                 <img

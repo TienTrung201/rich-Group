@@ -11,8 +11,7 @@ import "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { addDocument } from "./firebase/services";
 import { useEffect, useMemo, useState } from "react";
 import { useGetdata } from "./hooks/useGetData";
-import QuanHeCoDongSlice from // shareholders, // shareholders,
-"./pages/Quanhecodong/QuanHeCoDongSlice";
+import QuanHeCoDongSlice from "./pages/Quanhecodong/QuanHeCoDongSlice"; // shareholders, // shareholders,
 // import { shareholders } from "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { Listnewspapers } from "./redux/selector";
 // import { addDocument } from "./firebase/services";

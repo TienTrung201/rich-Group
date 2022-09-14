@@ -32,18 +32,30 @@ export const useGetdata = (collectionName) => {
     //     .toDate()
     //     .getMonth()}/ ${data.day.toDate().getFullYear()}`,
     // };
+    const getDay =
+      data.day.toDate().getDate() < 10
+        ? `0${data.day.toDate().getDate()}`
+        : data.day.toDate().getDate();
+    const getMonth =
+      data.day.toDate().getMonth() < 10
+        ? `0${data.day.toDate().getMonth()}`
+        : data.day.toDate().getDate();
+    const getHours =
+      data.day.toDate().getHours() < 10
+        ? `0${data.day.toDate().getHours()}`
+        : data.day.toDate().getHours();
+    const getMinutes =
+      data.day.toDate().getMinutes() < 10
+        ? `0${data.day.toDate().getMinutes()}`
+        : data.day.toDate().getMinutes();
     return {
       ...data,
       day:
         collectionName !== "shareholders"
-          ? `${data.day.toDate().getDate()}/${data.day
+          ? `${getDay}/${getMonth}/${data.day.toDate().getFullYear()}`
+          : `${getDay}/${getMonth}/${data.day
               .toDate()
-              .getMonth()}/${data.day.toDate().getFullYear()}`
-          : `${data.day.toDate().getDate()}/${data.day
-              .toDate()
-              .getMonth()}/${data.day.toDate().getFullYear()}  ${data.day
-              .toDate()
-              .getHours()}:${data.day.toDate().getMinutes()}`,
+              .getFullYear()}  ${getHours}:${getMinutes}`,
     };
   });
   // console.log(dataConvert);

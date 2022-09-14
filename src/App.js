@@ -11,7 +11,7 @@ import "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { addDocument } from "./firebase/services";
 import { useEffect, useMemo, useState } from "react";
 import { useGetdata } from "./hooks/useGetData";
-import QuanHeCoDongSlice from // shareholders,
+import QuanHeCoDongSlice from // shareholders, // shareholders,
 "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { shareholders } from "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { Listnewspapers } from "./redux/selector";
@@ -25,9 +25,9 @@ function App() {
   //   // newspapers.forEach((news) => {
   //   //   addDocument("news", news);
   //   // });
-  //   // shareholders.forEach((shareholder) => {
-  //   //   addDocument("shareholders", shareholder);
-  //   // });
+  // shareholders.forEach((shareholder) => {
+  //   addDocument("shareholders", shareholder);
+  // });
   //   // console.log(newsSlice.getInitialState());
   // }, []);
   const [callNumber, setCallNumber] = useState(0);

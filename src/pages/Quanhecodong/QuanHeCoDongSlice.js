@@ -6,6 +6,11 @@ export const QuanHeCoDongSlice = createSlice({
     status: "idle",
     shareholder: [],
   },
+  reducers: {
+    getDatashareholders: (state, action) => {
+      state.shareholder.push(action.payload);
+    },
+  },
 });
 
 export default QuanHeCoDongSlice;

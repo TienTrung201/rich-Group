@@ -5,12 +5,13 @@ import { collection, getDocs } from "firebase/firestore";
 
 export const useGetdata = (collectionName) => {
   const [data, setData] = useState([]);
-  const [countReturn, setCountReturn] = useState(true);
-  const querySnapshot = getDocs(collection(db, collectionName));
+  // const [countReturn, setCountReturn] = useState(true);
+
   useEffect(() => {
-    if (!countReturn) {
-      return;
-    }
+    const querySnapshot = getDocs(collection(db, collectionName));
+    // if (!countReturn) {
+    //   return;
+    // }
     querySnapshot.then((data) => {
       const documents = data.docs.map((doc) => {
         return {
@@ -21,9 +22,9 @@ export const useGetdata = (collectionName) => {
       });
 
       setData(documents);
-      setCountReturn(false);
+      // setCountReturn(false);
     });
-  }, [collectionName, querySnapshot, countReturn]);
+  }, [collectionName /*, countReturn*/]);
   const dataConvert = data.map((data) => {
     // return {
     //   ...data,

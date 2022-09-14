@@ -5,12 +5,15 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; //npm i react-router-dom
 import { publicRoutes } from "@/routes";
 import { DefaultLayout } from "@/components/Layout";
-import newsSlice from "./pages/Chitiettintuc/ChiTietTinTucSlice"; // newspapers, // newspapers,
+import newsSlice from "./pages/Chitiettintuc/ChiTietTinTucSlice"; // newspapers,
 import Chitiettintuc from "./pages/Chitiettintuc";
 import "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { addDocument } from "./firebase/services";
 import { useEffect, useMemo, useState } from "react";
 import { useGetdata } from "./hooks/useGetData";
+import QuanHeCoDongSlice from // shareholders,
+"./pages/Quanhecodong/QuanHeCoDongSlice";
+// import { shareholders } from "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { Listnewspapers } from "./redux/selector";
 // import { addDocument } from "./firebase/services";
 // import { shareholders } from "./pages/Quanhecodong/QuanHeCoDongSlice";
@@ -18,32 +21,42 @@ function App() {
   // const listNews = useSelector(Listnewspapers);
   const Dispatch = useDispatch();
   // let getDatas;
-  useEffect(() => {
-    // newspapers.forEach((news) => {
-    //   addDocument("news", news);
-    // });
-    // shareholders.forEach((shareholder) => {
-    //   addDocument("shareholders", shareholder);
-    // });
-    // console.log(newsSlice.getInitialState());
-  }, []);
+  // useEffect(() => {
+  //   // newspapers.forEach((news) => {
+  //   //   addDocument("news", news);
+  //   // });
+  //   // shareholders.forEach((shareholder) => {
+  //   //   addDocument("shareholders", shareholder);
+  //   // });
+  //   // console.log(newsSlice.getInitialState());
+  // }, []);
   const [callNumber, setCallNumber] = useState(0);
-  const data = useGetdata("news");
+  const dataNews = useGetdata("news");
+  const datashareholders = useGetdata("shareholders");
   useEffect(() => {
-    data.forEach((data) => {
+    dataNews.forEach((data) => {
       if (callNumber === 1) {
         return;
       }
       Dispatch(newsSlice.actions.getDataNews(data));
+      // Dispatch(QuanHeCoDongSlice.actions.getDatashareholders(data));
       setCallNumber(1);
     });
-  }, [data, Dispatch, callNumber]);
+    datashareholders.forEach((data) => {
+      if (callNumber === 1) {
+        return;
+      }
+      Dispatch(QuanHeCoDongSlice.actions.getDatashareholders(data));
+      setCallNumber(1);
+    });
+  }, [dataNews, Dispatch, callNumber, datashareholders]);
+
   const newsPath = useMemo(() => {
-    const news = data.map((data) => {
+    const news = dataNews.map((data) => {
       return data;
     });
     return news;
-  }, [data]);
+  }, [dataNews]);
   return (
     <Router>
       <div className="App">

@@ -927,6 +927,9 @@
   .newsGroup__continer--title {
     text-align: justify;
   }
+  .newsContent {
+    height: 400px !important;
+  }
 }
 
 @media only screen and (max-width: 740px) {

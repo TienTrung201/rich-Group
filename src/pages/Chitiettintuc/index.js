@@ -25,7 +25,7 @@ function Chitiettintuc({ news, title, img, content }) {
   }, []);
   title = news.title;
   img = news.src;
-  content = news.content.split("/");
+  content = news.content.split("/ /");
   const contentTitles = [content[0], content[1]];
   const contentsNews = content.slice(2);
   const relatedNews = listNews.map((relatedNews, index) => {

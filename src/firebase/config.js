@@ -4,8 +4,8 @@ import { initializeApp } from "firebase/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
-import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
-import { connectAuthEmulator, getAuth } from "firebase/auth";
+import { /*connectFirestoreEmulator,*/ getFirestore } from "firebase/firestore";
+import { /*connectAuthEmulator,*/ getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 

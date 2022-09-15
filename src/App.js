@@ -5,20 +5,18 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; //npm i react-router-dom
 import { publicRoutes } from "@/routes";
 import { DefaultLayout } from "@/components/Layout";
-import newsSlice, {
-  newspapers,
-} from "./pages/Chitiettintuc/ChiTietTinTucSlice"; // newspapers, // newspapers,
+import newsSlice from // newspapers,
+"./pages/Chitiettintuc/ChiTietTinTucSlice"; // newspapers, // newspapers,
 import Chitiettintuc from "./pages/Chitiettintuc";
 import "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { addDocument } from "./firebase/services";
 import { useEffect, useMemo, useState } from "react";
 import { useGetdata } from "./hooks/useGetData";
-import QuanHeCoDongSlice, {
-  shareholders,
-} from "./pages/Quanhecodong/QuanHeCoDongSlice"; // shareholders, // shareholders, // shareholders,
+import QuanHeCoDongSlice from // shareholders,
+"./pages/Quanhecodong/QuanHeCoDongSlice"; // shareholders, // shareholders, // shareholders,
 // import { shareholders } from "./pages/Quanhecodong/QuanHeCoDongSlice";
 // import { Listnewspapers } from "./redux/selector";
-import { addDocument } from "./firebase/services";
+// import { addDocument } from "./firebase/services";
 // import { shareholders } from "./pages/Quanhecodong/QuanHeCoDongSlice";
 function App() {
   // const listNews = useSelector(Listnewspapers);

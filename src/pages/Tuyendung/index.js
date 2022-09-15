@@ -23,9 +23,10 @@ function TuyenDung() {
           </thead>
           <tbody>
             {listRecruitments.map((recruitment, index) => {
+              let i = index + 1;
               return (
                 <tr key={index}>
-                  <td>{index}</td>
+                  <td>{i}</td>
                   <td>{recruitment.title}</td>
                   <td>{recruitment.deadline}</td>
                   <td>{recruitment.number}</td>

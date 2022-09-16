@@ -268,11 +268,6 @@ function TinTuc() {
                             {news.content.split("/")[0]}
                           </p>
                           <div className={cx("newEventTime")}>
-                            <img
-                              src="./assets/img/trangchu/clock.png"
-                              alt=""
-                              className={cx("timeClock")}
-                            />
                             <p className={cx("timeDay")}> {news.day}</p>
                             <Link to={`/Chitiettintuc/${news.path}`}>
                               <p className={cx("timeMore")}>Xem chi tiết</p>

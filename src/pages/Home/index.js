@@ -152,7 +152,7 @@ function Home() {
                     />
                     <p className={cx("visoncontentText")}>
                       <span className={cx("textSpecial")}>RICHGROUP</span> định
-                      hướng trở thành
+                      hướng trở thành{" "}
                       <span className={cx("textSpecial-noUppercase")}>
                         tập đoàn đa ngành
                       </span>{" "}
@@ -191,7 +191,7 @@ function Home() {
                     />
                     <p className={cx("visoncontentText")}>
                       <span className={cx("textSpecial")}>
-                        Đối với thị trường:
+                        Đối với thị trường:{" "}
                       </span>
                       Cung cấp những sản phẩm &amp; dịch vụ tốt nhất. Thỏa mãn
                       khách hàng khó tính về nội dung và chất lượng sản phẩm đưa
@@ -206,7 +206,7 @@ function Home() {
                     />
                     <p className={cx("visoncontentText")}>
                       <span className={cx("textSpecial")}>
-                        Đối với cổ đông, đối tác:
+                        Đối với cổ đông, đối tác:{" "}
                       </span>
                       Mang đến những cơ hội, giải pháp để tiến xa hơn trong mọi
                       lĩnh vực đầu tư của tập đoàn.
@@ -220,7 +220,7 @@ function Home() {
                     />
                     <p className={cx("visoncontentText")}>
                       <span className={cx("textSpecial")}>
-                        Đối với nhân viên:
+                        Đối với nhân viên:{" "}
                       </span>
                       Tạo cơ hội phát triển công bằng, lành mạnh cho nhân viên
                       thỏa mãn ước mơ và hoài bão của mỗi người. Đào tạo những
@@ -236,7 +236,7 @@ function Home() {
                     />
                     <p className={cx("visoncontentText")}>
                       <span className={cx("textSpecial")}>
-                        Đối với thị xã hội:
+                        Đối với thị xã hội:{" "}
                       </span>
                       Đóng góp tích cực vào các hoạt động hướng về cộng đồng,
                       cam kết nâng cao chất lượng cuộc sống của đất nước thông

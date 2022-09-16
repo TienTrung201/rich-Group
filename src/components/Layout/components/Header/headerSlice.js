@@ -20,7 +20,7 @@ export const headerSlice = createSlice({
       },
       {
         src: building,
-        name: "Bât động sản",
+        name: "Bất động sản",
       },
       {
         src: hand,
@@ -28,7 +28,7 @@ export const headerSlice = createSlice({
       },
       {
         src: loader,
-        name: "truyền thông",
+        name: "Truyền thông",
       },
     ],
   },

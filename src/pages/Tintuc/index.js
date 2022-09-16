@@ -36,6 +36,7 @@ function TinTuc() {
     mount = false;
     // setMount(false);
   }
+
   return (
     <>
       {mount === false ? (

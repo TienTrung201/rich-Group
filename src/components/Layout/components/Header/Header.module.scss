@@ -1077,6 +1077,10 @@ nav {
   }
   .bannerLink {
     font-size: 1.4rem;
+    &:hover {
+      background-color: rgb(226, 224, 224);
+      // opacity: 0.5;
+    }
   }
   .iconBannerNav {
     width: 2.5rem;
